@@ -1,0 +1,19 @@
+// This code reverses the number, which user enters.
+// Written in 13th of January 2026
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, d, s = 0;
+    cout << "Enter a number: ";
+    cin >> n;
+    int o = n;
+    
+    for(; n > 0; n /= 10){
+        d = n % 10;
+        s = s * 10 + d;
+    }
+    
+    cout << "Reverse of the " << o << " is " << s;
+    return 0;
+}
